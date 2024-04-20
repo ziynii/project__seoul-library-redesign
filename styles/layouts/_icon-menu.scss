@@ -1,0 +1,68 @@
+.icon-menu {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+
+  &-list {
+    @include flexbox(between, start);
+    flex-wrap: wrap;
+  }
+
+  &-item {
+    @include column-flexbox;
+    width: 30%;
+    margin-bottom: 16px;
+    text-align: center;
+
+    &:active {
+      i,
+      p {
+        color: $blue;
+      }
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+
+    i {
+      display: inline-block;
+      margin-bottom: 4px;
+      font-size: 48px;
+      color: $secondary;
+      transition: color 150ms ease-in-out;
+    }
+
+    p {
+      @include text-style(13, $primary);
+      display: block;
+      color: $secondary;
+      transition: color 150ms ease-in-out;
+    }
+  }
+
+  @include responsive(T) {
+    &-item {
+      width: 16.666%;
+      margin-bottom: 0;
+
+      i {
+        font-size: 60px;
+      }
+
+      p {
+        @include text-style(14);
+      }
+
+      &:hover {
+        i {
+          color: $blue;
+        }
+
+        p {
+          color: $primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.library-schedule {
+  width: 100%;
+
+  &-title {
+    @include text-style(18, $dark);
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  @include responsive(T) {
+    &-wrapper {
+      @include flexbox(between);
+    }
+  }
+
+  @include responsive(D) {
+    &-title {
+      @include text-style(24, $dark);
+      margin-bottom: 24px;
+    }
+  }
+}

@@ -1,0 +1,221 @@
+.main-book {
+  padding: 20px 8px;
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: $background;
+
+  .main-book-wrapper {
+    position: relative;
+  }
+
+  .tns-controls {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+
+    button {
+      width: 28px;
+      height: 28px;
+      color: $white;
+      background-color: $blue;
+      border-radius: 50%;
+
+      &:active {
+        background-color: $blue-dark;
+      }
+
+      &:hover {
+        background-color: $blue-dark;
+      }
+
+      &[disabled] {
+        cursor: default;
+        background-color: $blue-light;
+
+        &:hover {
+          background-color: $blue-light;
+        }
+      }
+
+      i {
+        @include flexbox;
+        font-size: 24px;
+      }
+
+      &:first-child {
+        margin-right: 4px;
+
+        i {
+          margin-left: -3px;
+          transform: rotate(90deg);
+        }
+      }
+
+      &:last-child {
+        i {
+          margin-right: -3px;
+          transform: rotate(-90deg);
+        }
+      }
+    }
+  }
+
+  .book-tab {
+    &-list {
+      @include flexbox(start);
+      margin-bottom: 8px;
+    }
+
+    &-item {
+      @include text-style(16, $primary);
+
+      .tab-button {
+        padding: 8px 12px;
+        background-color: $white;
+        border: 1px solid $border;
+        border-radius: 4px;
+      }
+
+      &:first-child {
+        margin-right: 8px;
+      }
+
+      &.is-active {
+        .tab-button {
+          font-weight: 700;
+          color: $blue;
+          border-color: $blue;
+        }
+      }
+    }
+  }
+
+  .book-content {
+    display: none;
+
+    &.is-select {
+      display: block;
+    }
+
+    .book-slide {
+      &-item {
+        .book-item-detail {
+          @include column-flexbox;
+
+          img {
+            width: vw(175);
+            height: vw(269);
+            margin-bottom: 8px;
+            box-shadow: $dropdown-shadow;
+
+            @include responsive(T) {
+              width: vw(176, 768);
+              height: vw(269, 768);
+              max-width: 236px;
+              max-height: 361px;
+            }
+
+            @include responsive(D) {
+              width: 180px;
+              height: 276px;
+              margin-bottom: 0;
+              box-shadow: none;
+              border: 1px solid $border;
+            }
+          }
+
+          .detail-text {
+            text-align: center;
+
+            strong {
+              @include text-style(16);
+              margin-bottom: 4px;
+            }
+
+            p {
+              @include text-style(14, $secondary);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    padding: 24px;
+    margin-right: -45px;
+    margin-left: -45px;
+
+    .tns-controls {
+      right: 0;
+    }
+  }
+
+  @include responsive(D) {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: $white;
+
+    .book-tab-list {
+      margin-bottom: 16px;
+    }
+
+    .book-content {
+      width: 90%;
+      margin: 0 auto;
+
+      .book-slide {
+        &-item {
+          width: 180px;
+          // box-shadow: -10px 0 13px -7px rgba($dark, 0.4),
+          //   10px 0 13px -7px rgba($dark, 0.4), 5px 5px 15px 2px rgba(0, 0, 0, 0);
+
+          .book-item-detail {
+            position: relative;
+            width: 180px;
+            overflow: hidden;
+
+            &:hover {
+              .detail-text {
+                bottom: 0;
+              }
+            }
+
+            .detail-text {
+              @include column-flexbox;
+              position: absolute;
+              bottom: -80px;
+              width: 100%;
+              height: 80px;
+              padding: 8px 4px;
+              background-color: rgba($dark, 0.7);
+              transition: bottom 150ms ease-in-out;
+
+              strong,
+              p {
+                color: $white;
+              }
+
+              strong {
+                @include text-style(14);
+                margin-bottom: 0;
+              }
+
+              p {
+                @include text-style(13);
+
+                &::before {
+                  display: block;
+                  margin: -4px 0;
+                  font-size: 2px;
+                  content: '◇';
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

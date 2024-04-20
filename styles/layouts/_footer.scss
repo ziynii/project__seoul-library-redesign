@@ -1,0 +1,95 @@
+.footer {
+  @include column-flexbox;
+
+  &-top {
+    @include flexbox(between);
+    padding: 8px 16px;
+    margin-right: -15px;
+    margin-left: -15px;
+    border-bottom: 1px solid $border;
+
+    &-left {
+      @include text-style(13, $primary);
+      margin-bottom: 8px;
+
+      a:first-child {
+        margin-right: 8px;
+        color: $red;
+      }
+    }
+
+    &-right {
+      .sns-link {
+        font-size: 14px;
+
+        a {
+          padding: 4px 8px;
+          border-radius: 50%;
+
+          &:first-child {
+            margin-right: 4px;
+            background-color: $blue-dark;
+          }
+
+          &:last-child {
+            background-color: $red;
+          }
+
+          &:active {
+            opacity: 0.4;
+          }
+        }
+
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &-content {
+    @include column-flexbox(start, start);
+    padding: 24px 0 48px;
+
+    .footer-info {
+      @include text-style(13);
+
+      dl {
+        div {
+          @include flexbox(start, start);
+
+          dt::after {
+            margin: 0 4px;
+            content: ':';
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    .footer-content {
+      align-items: center;
+
+      .footer-logo {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .footer-top-left {
+      a:hover {
+        opacity: 0.4;
+      }
+    }
+
+    .footer-top-right {
+      .sns-link {
+        a:hover {
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+}

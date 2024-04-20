@@ -1,0 +1,75 @@
+.notice {
+  width: 100%;
+  padding: 20px 0;
+
+  &-tab {
+    &-list {
+      @include flexbox(start);
+      margin-bottom: 18px;
+    }
+
+    &-item {
+      @include text-style(16, $primary);
+
+      .tab-button {
+        padding: 8px 12px;
+        background-color: $white;
+        border: 1px solid $border;
+        border-radius: 4px;
+      }
+
+      &:first-child {
+        margin-right: 8px;
+      }
+
+      &.is-active {
+        .tab-button {
+          font-weight: 700;
+          color: $blue;
+          border-color: $blue;
+        }
+      }
+    }
+  }
+
+  &-content {
+    &-wrapper {
+      display: none;
+
+      &.is-select {
+        display: block;
+      }
+    }
+
+    &-item {
+      padding: 4px 0;
+
+      &:active,
+      &:hover {
+        a {
+          color: $blue;
+        }
+      }
+
+      a {
+        @include flexbox(between);
+        @include text-style(16, $primary);
+      }
+
+      p {
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    &-content {
+      a {
+        @include text-style(18);
+      }
+    }
+  }
+}
