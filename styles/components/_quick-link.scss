@@ -1,0 +1,37 @@
+.quick-menu-link {
+  margin-right: -15px;
+  margin-bottom: 24px;
+  margin-left: -15px;
+  background-color: $background;
+
+  .link {
+    &-item {
+      padding: 24px 15px;
+      border-bottom: 1px solid $border;
+
+      &:hover {
+        background-color: $border;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      a {
+        @include text-style(16, $primary);
+        @include flexbox(start);
+
+        i {
+          margin-right: 8px;
+          font-size: 20px;
+          color: $secondary;
+        }
+      }
+    }
+  }
+
+  @include responsive(T) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

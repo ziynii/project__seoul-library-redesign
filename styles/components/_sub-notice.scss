@@ -1,0 +1,87 @@
+.notice-wapper {
+  width: 100%;
+
+  .notice-board {
+    width: 100%;
+    margin-bottom: 48px;
+
+    .summary {
+      padding: 8px 0;
+    }
+
+    .board_list {
+      border-collapse: collapse;
+
+      thead {
+        tr {
+          border-top: 2px solid $blue-dark;
+          border-bottom: 1px solid $blue-dark;
+        }
+
+        td {
+          @include text-style(16, $primary);
+          padding: 8px 0;
+          font-weight: 700;
+          text-align: center;
+        }
+      }
+
+      tbody {
+        tr {
+          height: 48px;
+          border-bottom: 1px solid $border;
+
+          &:active {
+            background-color: $background;
+          }
+        }
+
+        td {
+          @include text-style(14, $primary);
+          padding: 0;
+          text-align: center;
+
+          &.list-all {
+            p {
+              color: $white;
+              background-color: $blue;
+              border-radius: 2px;
+            }
+          }
+
+          .board-item-title {
+            display: table;
+            width: 90%;
+            margin-left: 8px;
+            text-align: left;
+            white-space: nowrap;
+            table-layout: fixed;
+
+            > a {
+              @include text-style(14, $primary);
+              display: table-cell;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .notice-board {
+      .board_list {
+        tbody {
+          tr:hover {
+            background-color: $background;
+          }
+
+          .board-item-title a:hover {
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}

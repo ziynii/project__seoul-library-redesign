@@ -1,0 +1,74 @@
+.gnb-nav {
+  &-list {
+    @include flexbox(end);
+  }
+
+  &-item {
+    @include text-style(18, $dark);
+    padding: 24px 0;
+    margin-right: 24px;
+    font-weight: 500;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &.is-open {
+      .gnb-depth {
+        max-height: 320px;
+        box-shadow: $dropdown-shadow;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .gnb-depth {
+    @include flexbox(center, start);
+
+    position: absolute;
+    top: 79px;
+    left: 0;
+    z-index: $gnb-level;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: $white;
+    transition: max-height 200ms ease-in-out;
+
+    &-list {
+      margin-right: 96px;
+      margin-bottom: 24px;
+      text-align: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &-title {
+      @include text-style(16, $dark);
+      margin-bottom: 16px;
+      font-weight: 500;
+    }
+
+    &-item {
+      @include text-style(14, $primary);
+      margin-bottom: 8px;
+
+      &.is-link {
+        color: $blue;
+      }
+
+      a {
+        padding: 4px;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

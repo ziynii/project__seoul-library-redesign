@@ -1,0 +1,135 @@
+.calendar {
+  max-width: 340px;
+  margin-right: auto;
+  margin-left: auto;
+
+  &-header {
+    @include flexbox(between);
+    margin-bottom: 16px;
+
+    .calendar-year-month {
+      @include text-style(18, $primary);
+      font-weight: 700;
+    }
+
+    .calendar-nav {
+      @include flexbox;
+      border: 1px solid $border;
+
+      &-button {
+        @include text-style(13, $secondary);
+        width: 30px;
+        height: 30px;
+
+        &.go-today {
+          width: 55px;
+          border-right: 1px solid $border;
+          border-left: 1px solid $border;
+        }
+
+        &.go-prev {
+          transform: rotate(90deg);
+        }
+
+        &.go-next {
+          transform: rotate(-90deg);
+        }
+
+        &.go-prev,
+        &.go-next {
+          &:active,
+          &:hover i {
+            color: $primary;
+          }
+
+          &:hover {
+            background-color: $background;
+          }
+        }
+      }
+    }
+  }
+
+  &-content {
+    .calendar {
+      &-days {
+        @include text-style(16, $primary);
+        @include flexbox;
+        font-weight: 500;
+      }
+
+      &-day {
+        width: calc(100% / 7);
+        margin-bottom: 8px;
+        text-align: center;
+      }
+
+      &-dates {
+        @include flexbox;
+        flex-wrap: wrap;
+        border-top: 1px solid $border;
+      }
+
+      &-date {
+        @include text-style(13, $secondary);
+        position: relative;
+        width: calc(100% / 7);
+        height: 48px;
+        text-align: right;
+        border-bottom: 1px solid $border;
+        border-left: 1px solid $border;
+
+        .this,
+        .other {
+          @include flexbox(end);
+          padding-right: 4px;
+        }
+      }
+
+      &-day:nth-child(7n),
+      &-date:nth-child(7n) {
+        color: $blue;
+      }
+
+      &-date:nth-child(7n) {
+        border-right: 1px solid $border;
+      }
+
+      &-day:nth-child(7n + 1),
+      &-date:nth-child(7n + 1) {
+        color: $red;
+      }
+
+      &-date:nth-child(7n + 2) .this {
+        @include flexbox;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        padding-right: 0;
+        background-color: $yellow;
+        border-radius: 50%;
+      }
+    }
+
+    .captiontext {
+      @include flexbox(start);
+
+      i {
+        margin-right: 4px;
+        font-size: 13px;
+      }
+
+      p {
+        @include text-style(13, $secondary);
+        margin: 4px 0;
+        text-align: left;
+      }
+    }
+
+    .other {
+      opacity: 0.4;
+    }
+  }
+}

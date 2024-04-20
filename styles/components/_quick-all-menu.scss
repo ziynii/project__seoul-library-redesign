@@ -1,0 +1,137 @@
+.quick-menu-all {
+  width: 100%;
+
+  .all-menu {
+    &-wrapper {
+      &:first-child {
+        margin-bottom: 8px;
+      }
+    }
+
+    &-title {
+      @include flexbox(between);
+      padding: 4px 8px;
+      margin-right: -15px;
+      margin-left: -15px;
+      background-color: $blue;
+
+      &.is-active {
+        i {
+          transform: rotate(180deg);
+        }
+      }
+
+      &.is-dark {
+        background-color: $blue-dark;
+      }
+
+      h4 {
+        @include text-style(16, $white);
+      }
+
+      i {
+        font-size: 18px;
+        color: $white;
+        transition: transform 150ms ease-in-out;
+      }
+    }
+
+    &-list {
+      @include flexbox;
+      flex-wrap: wrap;
+      max-height: 0;
+      overflow: hidden;
+
+      &.is-active {
+        max-height: 100%;
+        padding: 8px;
+      }
+    }
+
+    &-item {
+      @include text-style(14, $primary);
+      position: relative;
+      width: 50%;
+      padding-left: 16px;
+      margin-bottom: 4px;
+
+      &:active,
+      &:hover {
+        color: $blue;
+      }
+
+      &::before {
+        position: absolute;
+        top: 9px;
+        left: 4px;
+        width: 6px;
+        height: 6px;
+        background-color: $blue-light;
+        border-radius: 50%;
+        content: '';
+      }
+    }
+  }
+
+  @include responsive(T) {
+    .all-menu {
+      &-wrapper {
+        &:first-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-title {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &-list {
+        @include flexbox(start);
+        flex-wrap: wrap;
+        max-height: 100%;
+        padding: 8px 0;
+
+        &.is-active {
+          padding: 8px 0;
+        }
+      }
+
+      &-item {
+        @include text-style(13);
+        width: 33%;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    @include flexbox(start, start);
+    height: 280px;
+
+    .all-menu {
+      &-wrapper {
+        width: 100%;
+
+        &:first-child {
+          margin-right: 8px;
+        }
+      }
+
+      &-title {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &-list {
+        @include flexbox(start);
+        flex-wrap: wrap;
+        max-height: 100%;
+      }
+
+      &-item {
+        @include text-style(14);
+        width: 50%;
+      }
+    }
+  }
+}
