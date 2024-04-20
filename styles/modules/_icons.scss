@@ -1,0 +1,106 @@
+// sass-lint:disable no-vendor-prefixes
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tomorrow' !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  font-variant: normal;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-book-search:before {
+  content: '\e900';
+}
+
+.ic-caret:before {
+  content: '\e901';
+}
+
+.ic-check:before {
+  content: '\e902';
+}
+
+.ic-chevron:before {
+  content: '\e903';
+}
+
+.ic-clock:before {
+  content: '\e904';
+}
+
+.ic-close:before {
+  content: '\e905';
+}
+
+.ic-ebook:before {
+  content: '\e906';
+}
+
+.ic-hope:before {
+  content: '\e907';
+}
+
+.ic-info:before {
+  content: '\e908';
+}
+
+.ic-library:before {
+  content: '\e909';
+}
+
+.ic-like:before {
+  content: '\e90a';
+}
+
+.ic-menu:before {
+  content: '\e90b';
+}
+
+.ic-mouse:before {
+  content: '\e90c';
+}
+
+.ic-search:before {
+  content: '\e90d';
+}
+
+.ic-store:before {
+  content: '\e90e';
+}
+
+.ic-user:before {
+  content: '\e90f';
+}
+
+.ic-culture:before {
+  content: '\e910';
+}
+
+.ic-book:before {
+  content: '\e91f';
+}
+
+.ic-phone:before {
+  content: '\e942';
+}
+
+.ic-location:before {
+  content: '\e947';
+}
+
+.ic-facebook:before {
+  content: '\ea91';
+}
+
+.ic-instagram:before {
+  content: '\ea92';
+}
+
+.ic-youtube:before {
+  content: '\ea9d';
+}

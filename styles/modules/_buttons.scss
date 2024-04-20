@@ -1,0 +1,43 @@
+%btn-base {
+  @include inline-flexbox;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.btn-blue {
+  @extend %btn-base;
+  color: $white;
+  background-color: $blue;
+  transition: background-color 200ms ease-in-out;
+  border: 1px solid transparent;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.btn-gray {
+  @extend %btn-base;
+  color: $primary;
+  background-color: $background;
+  transition: background-color 200ms ease-in-out;
+
+  &:hover {
+    background-color: $blue-dark;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.btn-outline {
+  @extend %btn-base;
+  color: $blue;
+  background-color: $white;
+  transition: background-color 200ms ease-in-out;
+
+  &:active {
+    opacity: 0.5;
+  }
+}

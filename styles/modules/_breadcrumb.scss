@@ -1,0 +1,21 @@
+.breadcrumb {
+  &-link {
+    @include text-style(14, $secondary);
+
+    &:hover {
+      color: $primary;
+    }
+
+    &::before {
+      margin: 0 4px;
+      color: $secondary !important;
+      content: '>';
+    }
+
+    &:first-child {
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
