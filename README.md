@@ -10,13 +10,13 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 
 ### │ Link
 
-**🔗 github**
+**🔗 figma**
 
-[https://github.com/ziynii/project__seoul-library-renewal-v2](https://github.com/ziynii/project__seoul-library-renewal-v2)
+[figma 바로가기](https://www.figma.com/design/FgWUVOauYI3mdfF850qr9r/%EC%84%9C%EC%9A%B8%EB%8F%84%EC%84%9C%EA%B4%80-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0%3A1&t=guuIP2ZBGfPuDmn9-1)
 
 🔗 **project site**
 
-[https://ziynii.github.io/project__seoul-library-renewal-v2/](https://ziynii.github.io/project__seoul-library-renewal-v2/)
+[web 바로가기](https://main--seoul-library-redesign.netlify.app/)
 
 <br />
 
@@ -34,15 +34,15 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 
 🔸 **홈**
 
-<img src="https://user-images.githubusercontent.com/85431762/180263573-1f1acde2-0fcc-4282-a207-e2dfc56381f0.png" width="700px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/4629d206-0c3b-453b-b914-3df03a6d15fb" width="700px" />
 
 🔸 **자주 물어보는 질문**
 
-<img src="https://user-images.githubusercontent.com/85431762/180264589-5cb10d2a-2c4b-4ae5-b2ec-22b700801a5d.png" width="700px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/c7fae22c-c256-4bd9-a02a-7afebe076f7a" width="700px" />
 
 🔸 **공지사항**
 
-<img src="https://user-images.githubusercontent.com/85431762/180264500-b3a396e8-e25d-4b17-ad22-a831bbcc6bc6.png" width="700px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/04b56c70-6961-4a88-917d-8ae56109cd3e" width="700px" />
 
 <br />
 
@@ -51,19 +51,19 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 
 🔸 **홈**
 
-<img src="https://user-images.githubusercontent.com/85431762/180264880-033b7e73-9a86-4275-aef2-726e21e586da.png" width="500px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/334c3874-c776-4d3f-9ad5-0e149e63937b" width="500px" />
 
 🔸 **자주 물어보는 질문**
 
-<img src="https://user-images.githubusercontent.com/85431762/180265107-cbf41db1-ed4a-41d0-8537-1c93b5cc1022.png" width="500px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/d82e03a4-fd59-4e7f-a301-6b47f56ebe1d" width="500px" />
 
 🔸 **공지사항**
 
-<img src="https://user-images.githubusercontent.com/85431762/180265044-e4e19904-73ef-497e-a811-e18ab61c8167.png" width="500px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/f4487591-60e8-4f23-af77-bcbaf776cabc" width="500px" />
 
 🔸 **메뉴**
 
-<img src="https://user-images.githubusercontent.com/85431762/180264958-24dc844c-0539-470e-aa7d-ffede4907563.png" width="500px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/bffe72a2-2eba-4df8-b552-af94bf72bf8b" width="500px" />
 
 <br />
 
@@ -72,17 +72,19 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 
 🔸 **홈**
 
-<img src="https://user-images.githubusercontent.com/85431762/180265498-539f4123-b6bf-49d2-8af1-0fe997c52449.png" width="400px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/b850d67a-dce3-4654-8251-12da081c7d4d" width="400px" />
 
 🔸 **자주 물어보는 질문**
-
-<img src="https://user-images.githubusercontent.com/85431762/180265369-d1af8c1e-9f51-4185-9932-c024700a707b.png" width="400px" />
+<p>
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/e8c3a633-02a2-46cb-a0a3-edd191b9cd8a" width="400px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/fff5de48-f8c1-4619-b326-bf519e00608c" width="400px" />
+</p>
 
 🔸 **공지사항**
 
-<img src="https://user-images.githubusercontent.com/85431762/180265449-20151125-66ab-4041-a06d-5a906878df66.png" width="400px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/2e7f21a3-18fc-4000-9e9f-90ce88f027f8" width="400px" />
 
 🔸 **메뉴**
 
-<img src="https://user-images.githubusercontent.com/85431762/180265740-12947886-7cb2-482c-a4d7-dc317e35e2c7.png" width="400px" />
+<img src="https://github.com/ziynii/project__seoul-library-redesign/assets/85431762/5aaa2851-cdf0-4c28-9e7c-be4c14b1aed8" width="400px" />
 
