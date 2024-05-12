@@ -10,7 +10,7 @@ Html 로 시멘틱한 구조를 잡은 후  javaScript로 동적인 기능을 �
 
 ### │ Link
 
-**🔗 figma**
+🔗 **figma**
 
 [figma 바로가기](https://www.figma.com/design/FgWUVOauYI3mdfF850qr9r/%EC%84%9C%EC%9A%B8%EB%8F%84%EC%84%9C%EA%B4%80-%EB%A6%AC%EB%94%94%EC%9E%90%EC%9D%B8?node-id=0%3A1&t=guuIP2ZBGfPuDmn9-1)
 
