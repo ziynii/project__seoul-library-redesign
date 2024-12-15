@@ -61,7 +61,8 @@
       .auth-buttons {
         @include flexbox;
 
-        button {
+        a {
+          display: flex;
           width: 50%;
           height: 40px;
           margin-right: 8px;
