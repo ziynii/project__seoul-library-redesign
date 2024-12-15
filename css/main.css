@@ -1194,6 +1194,24 @@ i {
 .notice-wapper .notice-board .board_list {
   border-collapse: collapse;
 }
+.notice-wapper .notice-board .board_list .notice-col--1 {
+  width: 5%;
+}
+.notice-wapper .notice-board .board_list .notice-col--2 {
+  width: 40%;
+}
+.notice-wapper .notice-board .board_list .notice-col--3 {
+  width: 15%;
+}
+.notice-wapper .notice-board .board_list .notice-col--4 {
+  width: 15%;
+}
+.notice-wapper .notice-board .board_list .notice-col--5 {
+  width: 15%;
+}
+.notice-wapper .notice-board .board_list .notice-col--6 {
+  width: 5%;
+}
 .notice-wapper .notice-board .board_list thead tr {
   border-top: 2px solid #004587;
   border-bottom: 1px solid #004587;

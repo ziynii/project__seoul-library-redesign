@@ -12,6 +12,27 @@
     .board_list {
       border-collapse: collapse;
 
+      .notice-col {
+        &--1 {
+          width: 5%;
+        }
+        &--2 {
+          width: 40%;
+        }
+        &--3 {
+          width: 15%;
+        }
+        &--4 {
+          width: 15%;
+        }
+        &--5 {
+          width: 15%;
+        }
+        &--6 {
+          width: 5%;
+        }
+      }
+
       thead {
         tr {
           border-top: 2px solid $blue-dark;
